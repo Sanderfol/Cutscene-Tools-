@@ -1,0 +1,90 @@
+
+---------RU---------
+
+Cutscene Tools - Установка и инструкция (Mafia: The City of Lost Heaven)
+
+Небольшая, но важная утилита для работы с катсценами в Mafia: The City of Lost Heaven - набор редакторов и плагинов для .rep / .chg и 3ds Max.
+
+Установка
+
+1. Скопируйте папки `RepEditor` и `ChgEditor` в корневую папку с игрой (ту же папку, где находится исполняемый файл игры).
+   Размещение рядом с игрой упрощает работу.
+
+2. Запустите редакторы из этих папок (можно создать ярлыки на рабочем столе для удобства).
+   Рекомендуется закрыть игру перед редактированием файлов.
+
+Поддержка форматов
+
+Редакторы должны работать с `.rep` и `.chg` любого релиза/версии игры.
+Тем не менее, из-за различий в структуре файлов редкость проблем возможна - внимательно относитесь к предупреждениям ниже.
+
+Использование плагинов в 3ds Max
+
+1. Откройте 3ds Max.
+2. Перейдите в Utilities Panel → MAXScript → Run Script.
+3. Выберите нужный `.ms` скрипт и выполните его.
+4. Следуйте инструкциям конкретного скрипта (импорт/экспорт и т.п.).
+5. Готово - используйте функции плагина в интерфейсе 3ds Max.
+
+Важное предупреждение (прочтите обязательно!)
+
+ChgEditor может полностью пропустить `ScriptsBlock` в некоторых `.chg` файлах.
+Причина — структура/содержимое этого блока различается между файлами и версиями; в результате при попытке сохранить такой файл возможны ошибки или падения.
+Рекомендация: если у вас файл с нестандартным `ScriptsBlock`, не сохраняйте его через ChgEditor - это может привести к повреждению файла и крашу игры.
+
+Резервные копии и ответственность
+
+Всегда делайте резервные копии оригинальных `.rep` и `.chg` перед любыми изменениями.
+Пример: `dif01a.chg` → `dif01a.chg.bak` или поместите копию в отдельную папку `backup/`.
+Автор инструментов не несёт ответственности за любые изменения или повреждения игровых файлов. Используете на свой страх и риск.
+
+Советы по безопасной работе
+
+Закрывайте игру перед правкой файлов.
+Работайте с копиями, тестируйте изменения на отдельной папке сохранений.
+Если редактор выдал предупреждение - прочитайте и действуйте осторожно.
+
+---------EN---------
+
+Cutscene Tools - Installation and User Guide (Mafia: The City of Lost Heaven)
+
+A compact but essential utility for working with cutscenes in Mafia: The City of Lost Heaven — a set of editors and plugins for .rep / .chg files and 3ds Max.
+
+Installation
+
+1.  Copy the `RepEditor` and `ChgEditor` folders into the root game directory (the same folder containing the game's executable file).
+    Placing them alongside the game simplifies their operation.
+
+2.  Launch the editors from their respective folders (you can create desktop shortcuts for convenience).
+    It is recommended to close the game before editing any files.
+
+Format Support
+
+The editors are designed to work with `.rep` and `.chg` files from any release/version of the game.
+However, due to potential variations in file structure, rare issues may occur — please pay close attention to the warnings below.
+
+Using Plugins in 3ds Max
+
+1.  Open 3ds Max.
+2.  Go to Utilities Panel → MAXScript → Run Script.
+3.  Select the required `.ms` script and run it.
+4.  Follow the specific instructions for that script (import/export, etc.).
+5.  Done — the plugin's functions will be available in the 3ds Max interface.
+
+Important Warning (Mandatory Reading!)
+
+ChgEditor may completely skip the `ScriptsBlock` in certain `.chg` files.
+The reason is that the structure/content of this block varies between files and versions; consequently, attempting to save such a file may cause errors or crashes.
+Recommendation: If you have a file with a non-standard `ScriptsBlock`, do not save it using ChgEditor — this can corrupt the file and cause the game to crash.
+
+Backups and Liability
+
+Always create backup copies** of the original `.rep` and `.chg` files before making any changes.
+Example: `dif01a.chg` → `dif01a.chg.bak` or place a copy in a separate `backup/` folder.
+The author of these tools is **not responsible** for any changes or damage to game files. Use them **at your own risk**.
+
+Safe Work Practices
+
+Close the game before editing files.
+Work on copies and test changes using a separate save folder.
+If an editor displays a warning — read it carefully and proceed with caution.
